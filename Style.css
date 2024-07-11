@@ -33,6 +33,27 @@ body{
     text-decoration: none; 
     color: white; 
 }
+
+#menu-toggle {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; 
+}
+
+#sidebar-container {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding: 15px;
+    transition: left 0.3s ease;
+}
+
 #sidebar {
     width: 200px;
     background-color: #333;
@@ -190,6 +211,10 @@ body{
     #introduction-box {
         padding: 5px 0; 
     }
+}
+
+#sidebar-container.open {
+    left: 0;
 }
 
 
