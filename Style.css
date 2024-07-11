@@ -26,6 +26,7 @@ body{
     text-align: center;
     line-height: 30px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 #nav-div a {
@@ -41,6 +42,10 @@ body{
     border: none;
     cursor: pointer;
     display: none; 
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #sidebar-container {
@@ -183,9 +188,10 @@ body{
     margin: auto;
     min-height: 100vh;
 }
+
 @media screen and (max-width: 1024px) {
-    #sidebar {
-        display: none; 
+    #menu-toggle {
+        display: inline-block;
     }
 
     #main-div .box-div {
@@ -198,10 +204,9 @@ body{
     }
 }
 
-
 @media screen and (max-width: 768px) {
     #nav-div a {
-        margin: 0 20px; 
+        margin: 0 10px; 
     }
 
     #main-div .box-div {
@@ -216,6 +221,3 @@ body{
 #sidebar-container.open {
     left: 0;
 }
-
-
-
